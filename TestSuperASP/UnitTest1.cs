@@ -6,16 +6,6 @@
 //{
 //    public class Tests
 //    {
-//        //[SetUp]
-//        //public void Setup()
-//        //{
-//        //}
-
-//        //[Test]
-//        //public void Test1()
-//        //{
-//        //    Assert.Pass();
-//        //}
 //        [Test]
 //        public void SecondSeleniumTest()
 //        {
@@ -27,54 +17,21 @@
 //                driver.Navigate().GoToUrl("https://localhost:7208/");
 //                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
 
-//                //Нажимаем на кнопку КУПИТЬ
+//                //ГЌГ Г¦ГЁГ¬Г ГҐГ¬ Г­Г  ГЄГ­Г®ГЇГЄГі ГЉГ“ГЏГ€Г’Гњ
 //                IWebElement searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/div[1]/form[1]/button[1]")));
 //                searchBox.SendKeys(Keys.Enter);
 
-//                //Кликаем на поисковую строку и ищем
+//                //ГЉГ«ГЁГЄГ ГҐГ¬ Г­Г  ГЇГ®ГЁГ±ГЄГ®ГўГіГѕ Г±ГІГ°Г®ГЄГі ГЁ ГЁГ№ГҐГ¬
 //                searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                searchBox.SendKeys("Тайные истоки");
+//                searchBox.SendKeys("Г’Г Г©Г­Г»ГҐ ГЁГ±ГІГ®ГЄГЁ");
 //                searchBox.SendKeys(Keys.Enter);
-//                //Нажимаем на кнопку найти
-//                searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
+//                //ГЌГ Г¦ГЁГ¬Г ГҐГ¬ Г­Г  ГЄГ­Г®ГЇГЄГі Г­Г Г©ГІГЁ
+//                searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'ГЏГ®ГЁГ±ГЄ')]")));
 //                searchBox.Click();
-//                //Проверяем есть ли товар
-//                searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Тайные истоки - Ольга Николаева (2012)')]")));
-//                bool a = searchBox.Text == "Тайные истоки - Ольга Николаева (2012)";
-//                Assert.IsTrue(searchBox.Text == "Тайные истоки - Ольга Николаева (2012)");
-
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                //searchBox.SendKeys("Иван Федоров");
-//                //searchBox.SendKeys(Keys.Enter);
-//                ////Нажимаем на кнопку найти
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
-//                //searchBox.Click();
-//                ////Проверяем есть ли товар
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Подземный мир - Иван Федоров (2005)')]")));
-//                //a = searchBox.Text == "Подземный мир - Иван Федоров (2005)";
-//                //Assert.IsTrue(searchBox.Text == "Подземный мир - Иван Федоров (2005)");
-
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                //searchBox.SendKeys("2003");
-//                //searchBox.SendKeys(Keys.Enter);
-//                ////Нажимаем на кнопку найти
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
-//                //searchBox.Click();
-//                ////Проверяем есть ли товар
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Хроники фантазии - Наталья Степанова (2003)')]")));
-//                //a = searchBox.Text == "Хроники фантазии - Наталья Степанова (2003)";
-//                //Assert.IsTrue(searchBox.Text == "Хроники фантазии - Наталья Степанова (2003)");
-
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                //searchBox.SendKeys("Приключения на краю Вселенной - Сергей Игнатьев (2019)");
-//                //searchBox.SendKeys(Keys.Enter);
-//                ////Нажимаем на кнопку найти
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
-//                //searchBox.Click();
-//                ////Проверяем есть ли товар
-//                //searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Приключения на краю Вселенной - Сергей Игнатьев (2')]")));
-//                //a = searchBox.Text == "Приключения на краю Вселенной - Сергей Игнатьев (2019)";
-//                //Assert.IsTrue(searchBox.Text == "Приключения на краю Вселенной - Сергей Игнатьев (2019)");
+//                //ГЏГ°Г®ГўГҐГ°ГїГҐГ¬ ГҐГ±ГІГј Г«ГЁ ГІГ®ГўГ Г°
+//                searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Г’Г Г©Г­Г»ГҐ ГЁГ±ГІГ®ГЄГЁ - ГЋГ«ГјГЈГ  ГЌГЁГЄГ®Г«Г ГҐГўГ  (2012)')]")));
+//                bool a = searchBox.Text == "Г’Г Г©Г­Г»ГҐ ГЁГ±ГІГ®ГЄГЁ - ГЋГ«ГјГЈГ  ГЌГЁГЄГ®Г«Г ГҐГўГ  (2012)";
+//                Assert.IsTrue(searchBox.Text == "Г’Г Г©Г­Г»ГҐ ГЁГ±ГІГ®ГЄГЁ - ГЋГ«ГјГЈГ  ГЌГЁГЄГ®Г«Г ГҐГўГ  (2012)"); 
 
 //            }
 //            catch (WebDriverTimeoutException)
@@ -82,147 +39,7 @@
 //            }
 //            finally
 //            {
-//                // Проверка результатов
-
-//                driver.Quit();
-//            }
-//        }
-//    }
-//}
-
-//using NUnit.Framework;
-//using OpenQA.Selenium;
-//using OpenQA.Selenium.Edge;
-//using OpenQA.Selenium.Support.UI;
-//using Allure.Commons;
-//using Allure.Net.Commons;
-//using NUnit.Allure.Attributes;
-
-//namespace TestSuperASP
-//{
-//    public class Tests
-//    {
-//        [Test]
-//        [AllureTest("Second Selenium Test")] // Добавляем аннотацию Allure для имени теста
-//        [AllureSeverity(Allure.Commons.SeverityLevel.Critical)] // Уровень критичности теста
-//        [AllureFeature("Search Functionality")] // Функциональность, которая тестируется
-//        public void SecondSeleniumTest()
-//        {
-//            var chromeOptions = new EdgeOptions();
-//            IWebDriver driver = new EdgeDriver(@"C:\chromedriver\msedgedriver.exe", chromeOptions);
-//            try
-//            {
-//                AllureLifecycle.Instance.WrapInStep(() =>
-//                {
-//                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-//                    driver.Navigate().GoToUrl("https://localhost:7208/");
-//                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
-
-//                    //Нажимаем на кнопку КУПИТЬ
-//                    IWebElement searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/div[1]/form[1]/button[1]")));
-//                    searchBox.SendKeys(Keys.Enter);
-
-//                    //Кликаем на поисковую строку и ищем
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                    searchBox.SendKeys("Тайные истоки");
-//                    searchBox.SendKeys(Keys.Enter);
-//                    //Нажимаем на кнопку найти
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
-//                    searchBox.Click();
-//                    //Проверяем есть ли товар
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Тайные истоки - Ольга Николаева (2012)')]")));
-//                    bool a = searchBox.Text == "Тайные истоки - Ольга Николаева (2012)";
-//                    Assert.IsTrue(searchBox.Text == "Тайные истоки - Ольга Николаева (2012)");
-
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                    searchBox.SendKeys("Иван Федоров");
-//                    searchBox.SendKeys(Keys.Enter);
-//                    //Нажимаем на кнопку найти
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
-//                    searchBox.Click();
-//                    //Проверяем есть ли товар
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Подземный мир - Иван Федоров (2005)')]")));
-//                    a = searchBox.Text == "Подземный мир - Иван Федоров (2005)";
-//                    Assert.IsTrue(searchBox.Text == "Подземный мир - Иван Федоров (2005)");
-
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                    searchBox.SendKeys("2003");
-//                    searchBox.SendKeys(Keys.Enter);
-//                    //Нажимаем на кнопку найти
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
-//                    searchBox.Click();
-//                    //Проверяем есть ли товар
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Хроники фантазии - Наталья Степанова (2003)')]")));
-//                    a = searchBox.Text == "Хроники фантазии - Наталья Степанова (2003)";
-//                    Assert.IsTrue(searchBox.Text == "Хроники фантазии - Наталья Степанова (2003)");
-
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                    searchBox.SendKeys("Приключения на краю Вселенной - Сергей Игнатьев (2019)");
-//                    searchBox.SendKeys(Keys.Enter);
-//                    //Нажимаем на кнопку найти
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
-//                    searchBox.Click();
-//                    //Проверяем есть ли товар
-//                    searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Приключения на краю Вселенной - Сергей Игнатьев (2')]")));
-//                    a = searchBox.Text == "Приключения на краю Вселенной - Сергей Игнатьев (2019)";
-//                    Assert.IsTrue(searchBox.Text == "Приключения на краю Вселенной - Сергей Игнатьев (2019)");
-//                }, "Performing search and validation steps"); // Шаг Allure
-
-//            }
-//            catch (WebDriverTimeoutException)
-//            {
-//            }
-//            finally
-//            {
-//                driver.Quit();
-//            }
-//        }
-//    }
-//}
-
-
-//using OpenQA.Selenium;
-//using OpenQA.Selenium.Edge;
-//using OpenQA.Selenium.Support.UI;
-
-//namespace TestSuperASP
-//{
-//    public class Tests
-//    {
-//        [Test]
-//        public void SecondSeleniumTest()
-//        {
-//            var chromeOptions = new EdgeOptions();
-//            IWebDriver driver = new EdgeDriver(@"C:\chromedriver\msedgedriver.exe", chromeOptions);
-//            try
-//            {
-//                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-//                driver.Navigate().GoToUrl("https://localhost:7208/");
-//                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
-
-//                //Нажимаем на кнопку КУПИТЬ
-//                IWebElement searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/div[1]/form[1]/button[1]")));
-//                searchBox.SendKeys(Keys.Enter);
-
-//                //Кликаем на поисковую строку и ищем
-//                searchBox = wait.Until(d => d.FindElement(By.XPath("//body/div[1]/main[1]/form[1]/input[1]")));
-//                searchBox.SendKeys("Тайные истоки");
-//                searchBox.SendKeys(Keys.Enter);
-//                //Нажимаем на кнопку найти
-//                searchBox = wait.Until(d => d.FindElement(By.XPath("//button[contains(text(),'Поиск')]")));
-//                searchBox.Click();
-//                //Проверяем есть ли товар
-//                searchBox = wait.Until(d => d.FindElement(By.XPath("//span[contains(text(),'Тайные истоки - Ольга Николаева (2012)')]")));
-//                bool a = searchBox.Text == "Тайные истоки - Ольга Николаева (2012)";
-//                Assert.IsTrue(searchBox.Text == "Тайные истоки - Ольга Николаева (2012)"); 
-
-//            }
-//            catch (WebDriverTimeoutException)
-//            {
-//            }
-//            finally
-//            {
-//                // Проверка результатов
+//                // ГЏГ°Г®ГўГҐГ°ГЄГ  Г°ГҐГ§ГіГ«ГјГІГ ГІГ®Гў
 //                driver.Quit();
 //            }
 //        }
@@ -298,7 +115,7 @@ namespace TestSuperASP
             searchPage.ClickBuyButton();
             searchPage.Search("2001");
 
-            Assert.IsTrue(searchPage.IsSearchResultDisplayed("епа - ваыф (2001)"));
+            Assert.IsTrue(searchPage.IsSearchResultDisplayed("ГҐГЇГ  - ГўГ Г»Гґ (2001)"));
 
             driver.Quit();
         }
